@@ -13,6 +13,6 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/create-user", createUserRoute);
 
-app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+app.listen(PORT, "0.0.0.0", () => {
+  console.log(`Servidor rodando em http://0.0.0.0:${PORT}`);
 });
